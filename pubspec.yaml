@@ -1,7 +1,7 @@
 name: simple_month_year_picker
 description: Simple to use month/year picker for your apps with highly customisable options.
 version: 0.0.1
-homepage:
+homepage: https://github.com/sivaprasadnk/SimpleMonthYearPicker
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
