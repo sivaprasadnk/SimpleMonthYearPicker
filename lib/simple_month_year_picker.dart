@@ -24,13 +24,13 @@ class SimpleMonthYearPicker {
   ///
   /// The [context] argument must not be null.
   ///
-  /// The [titleFontFamily] is optional. Defaults to Theme.of(context).textTheme.caption.fontFamily.
+  /// The [titleFontFamily] is optional.  Defaults to 'Rajdhani' fontFamily.
   /// It sets the font-family to use in 'Select Month' title.
   ///
-  /// The [yearTextFontFamily] argument is optional. Defaults to Theme.of(context).textTheme.bodyMedium.fontFamily.
+  /// The [yearTextFontFamily] argument is optional. Defaults to 'Rajdhani' fontFamily.
   /// It sets the font-family to use in displayed year .
   ///
-  /// The [monthTextFontFamily] argument is optional. Defaults to Theme.of(context).textTheme.bodyMedium.fontFamily.
+  /// The [monthTextFontFamily] argument is optional. Defaults to 'Rajdhani' fontFamily.
   /// It sets the font-family to use in month text.
   ///
   /// The [backgroundColor] argument is optional. Defaults to Theme.of(context).scaffoldBackgroundColor.
@@ -40,7 +40,7 @@ class SimpleMonthYearPicker {
   /// It sets the background color of selected month, text-color of remaining months and button color.
   ///
   /// The [barrierDismissible] argument is optional and is used to indicate whether tapping on the barrier will dismiss the dialog.
-  ///  Defaults to false.
+  ///  Defaults to true.
   ///
 
   static Future showMonthYearPickerDialog({
@@ -89,8 +89,7 @@ class SimpleMonthYearPicker {
                         child: Text(
                           'Select Month ',
                           style: TextStyle(
-                            fontFamily: titleFontFamily ??
-                                textTheme.caption!.fontFamily,
+                            fontFamily: titleFontFamily ?? 'Rajdhani',
                             fontSize: 25,
                             fontWeight: FontWeight.bold,
                           ),
@@ -117,9 +116,7 @@ class SimpleMonthYearPicker {
                                 },
                                 onHover: (val) {},
                                 child: MonthContainer(
-                                  fontFamily: monthTextFontFamily ??
-                                      textTheme.bodyMedium!.fontFamily
-                                          .toString(),
+                                  fontFamily: monthTextFontFamily ?? 'Rajdhani',
                                   month: monthModel.name,
                                   fillColor: index + 1 == selectedMonth
                                       ? primaryColor
@@ -230,8 +227,7 @@ class SimpleMonthYearPicker {
                           selectedYear.toString(),
                           style: TextStyle(
                             fontSize: 20,
-                            fontFamily: yearTextFontFamily ??
-                                textTheme.bodyMedium!.fontFamily,
+                            fontFamily: yearTextFontFamily ?? 'Rajdhani',
                             fontWeight: FontWeight.bold,
                           ),
                         ),

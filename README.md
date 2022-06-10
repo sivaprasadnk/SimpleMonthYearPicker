@@ -4,7 +4,7 @@
 
 Simple to use month/year picker for your apps with highly customisable options.
 
-![Image](https://github.com/sivaprasadnk/SimpleMonthYearPicker/blob/main/screenshots/screenshot.png)
+![Image](https://github.com/sivaprasadnk/SimpleMonthYearPicker/blob/main/screenshots/screenshot1.png)
 
 
 ## Getting started
@@ -13,7 +13,7 @@ Add this to your package's `pubspec.yaml` file
 
 ```yaml
 dependencies:
-  simple_month_year_picker: ^0.0.1
+  simple_month_year_picker: ^0.0.2
 ```
 
 ## Usage
