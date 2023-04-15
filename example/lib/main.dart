@@ -44,10 +44,12 @@ class MyHomePage extends StatelessWidget {
                         monthTextStyle: TextStyle(),
                         yearTextStyle: TextStyle(),
                         disableFuture:
-                            true // This will disable future years. it is false by default.
+                            true // This will disable future years. It is false by default.
                         );
-                // Use the selected date as needed
-                print('Selected date: $selectedDate');
+                // Use the selected date as needed.
+                debugPrint("month :" + selectedDate.month.toString());
+                debugPrint("year :" + selectedDate.year.toString());
+                debugPrint('Selected date: $selectedDate');
               },
               child: const Text('show dialog'),
             ),
