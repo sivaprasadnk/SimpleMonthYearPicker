@@ -39,6 +39,7 @@ class MyHomePage extends StatelessWidget {
                 await SimpleMonthYearPicker.showMonthYearPickerDialog(
                   context: context,
                   barrierDismissible: true,
+                  disableFuture: true,
                 );
               },
               child: const Text('show dialog'),
