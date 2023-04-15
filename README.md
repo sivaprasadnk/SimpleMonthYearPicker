@@ -13,7 +13,7 @@ Add this to your package's `pubspec.yaml` file
 
 ```yaml
 dependencies:
-  simple_month_year_picker: ^1.0.3
+  simple_month_year_picker: ^1.0.4
 ```
 
 ## Usage
@@ -29,14 +29,14 @@ import 'package:simple_month_year_picker/simple_month_year_picker.dart';
   Widget build(BuildContext context) {
    return ElevatedButton(
             onPressed: () async {
-                var selectedDate = await SimpleMonthYearPicker.showMonthYearPickerDialog(
-                  context: context,
-                  titleTextStyle: TextStyle(),
-                  monthTextStyle: TextStyle(),
-                  yearTextStyle: TextStyle(),
-                debugPrint("month :" + selectedDate.month.toString());
-                debugPrint("year :" + selectedDate.year.toString());  
+              var selectedDate = await SimpleMonthYearPicker.showMonthYearPickerDialog(
+                context: context,
+                titleTextStyle: TextStyle(),
+                monthTextStyle: TextStyle(),
+                yearTextStyle: TextStyle(),
               );
+              debugPrint("month :" + selectedDate.month.toString());
+              debugPrint("year :" + selectedDate.year.toString());  
             },
             child: const Text('show dialog'),
           );

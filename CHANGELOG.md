@@ -1,3 +1,6 @@
+## 1.0.4
+* Readme example correction
+
 ## 1.0.3
 * adding output in example in readme
 
