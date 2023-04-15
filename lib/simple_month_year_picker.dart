@@ -43,7 +43,7 @@ class SimpleMonthYearPicker {
   ///  Defaults to true.
   ///
 
-  static Future showMonthYearPickerDialog({
+  static Future<DateTime> showMonthYearPickerDialog({
     required BuildContext context,
     TextStyle? titleTextStyle,
     TextStyle? yearTextStyle,

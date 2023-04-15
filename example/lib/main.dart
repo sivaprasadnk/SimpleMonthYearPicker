@@ -46,11 +46,8 @@ class MyHomePage extends StatelessWidget {
                         disableFuture:
                             true // This will disable future years. it is false by default.
                         );
-                //Wait for the selected date to be returned from the async function.
-                if (selectedDate != null) {
-                  // Use the selected date as needed
-                  print('Selected date: $selectedDate');
-                }
+                // Use the selected date as needed
+                print('Selected date: $selectedDate');
               },
               child: const Text('show dialog'),
             ),

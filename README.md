@@ -10,7 +10,7 @@ Add this to your package's `pubspec.yaml` file
 
 ```yaml
 dependencies:
-  simple_month_year_picker: ^1.0.2
+  simple_month_year_picker: ^1.0.4
 ```
 
 ## Usage
@@ -35,14 +35,11 @@ import 'package:simple_month_year_picker/simple_month_year_picker.dart';
                         disableFuture:
                             true // This will disable future years. it is false by default.
                         );
-                //Wait for the selected date to be returned from the async function.
-                if (selectedDate != null) {
-                  // Use the selected date as needed
-                  print('Selected date: $selectedDate');
-                }
+                // Use the selected date as needed
+                print('Selected date: $selectedDate');
               },
               child: const Text('show dialog'),
-          );
+            );
   }
 ```
 
