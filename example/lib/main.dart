@@ -36,10 +36,13 @@ class MyHomePage extends StatelessWidget {
           Center(
             child: ElevatedButton(
               onPressed: () async {
-                await SimpleMonthYearPicker.showMonthYearPickerDialog(
+                var selectedDate =
+                    await SimpleMonthYearPicker.showMonthYearPickerDialog(
                   context: context,
                   barrierDismissible: true,
                 );
+                debugPrint("month :" + selectedDate.month.toString());
+                debugPrint("year :" + selectedDate.year.toString());
               },
               child: const Text('show dialog'),
             ),
