@@ -45,9 +45,9 @@ class SimpleMonthYearPicker {
 
   static Future showMonthYearPickerDialog({
     required BuildContext context,
-    String? titleFontFamily,
-    String? yearTextFontFamily,
-    String? monthTextFontFamily,
+    TextStyle? titleTextStyle,
+    TextStyle? yearTextStyle,
+    TextStyle? monthTextStyle,
     Color? backgroundColor,
     Color? selectionColor,
     bool? barrierDismissible,
@@ -56,7 +56,7 @@ class SimpleMonthYearPicker {
     final ThemeData theme = Theme.of(context);
     var primaryColor = selectionColor ?? theme.primaryColor;
     var bgColor = backgroundColor ?? theme.scaffoldBackgroundColor;
-    var textTheme = theme.textTheme;
+    // var textTheme = theme.textTheme;
 
     /// to get current year
     int selectedYear = DateTime.now().year;
@@ -89,11 +89,12 @@ class SimpleMonthYearPicker {
                         padding: const EdgeInsets.only(left: 15, top: 15),
                         child: Text(
                           'Select Month ',
-                          style: TextStyle(
-                            fontFamily: titleFontFamily ?? 'Rajdhani',
-                            fontSize: 25,
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style: titleTextStyle ??
+                              TextStyle(
+                                fontFamily: 'Rajdhani',
+                                fontSize: 25,
+                                fontWeight: FontWeight.bold,
+                              ),
                         ),
                       ),
                       Padding(
@@ -117,7 +118,7 @@ class SimpleMonthYearPicker {
                                 },
                                 onHover: (val) {},
                                 child: MonthContainer(
-                                  fontFamily: monthTextFontFamily ?? 'Rajdhani',
+                                  textStyle: monthTextStyle,
                                   month: monthModel.name,
                                   fillColor: index + 1 == selectedMonth
                                       ? primaryColor
@@ -226,11 +227,12 @@ class SimpleMonthYearPicker {
                         ),
                         Text(
                           selectedYear.toString(),
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontFamily: yearTextFontFamily ?? 'Rajdhani',
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style: yearTextStyle ??
+                              TextStyle(
+                                fontSize: 20,
+                                fontFamily: 'Rajdhani',
+                                fontWeight: FontWeight.bold,
+                              ),
                         ),
                         IconButton(
                           onPressed: () {
