@@ -13,7 +13,7 @@ Add this to your package's `pubspec.yaml` file
 
 ```yaml
 dependencies:
-  simple_month_year_picker: ^0.0.2
+  simple_month_year_picker: ^1.0.2
 ```
 
 ## Usage
@@ -31,7 +31,9 @@ import 'package:simple_month_year_picker/simple_month_year_picker.dart';
             onPressed: () async {
               await SimpleMonthYearPicker.showMonthYearPickerDialog(
                 context: context,
-                titleFontFamily: 'Rajdhani',
+                titleTextStyle: TextStyle(),
+                monthTextStyle: TextStyle(),
+                yearTextStyle: TextStyle(),
               );
             },
             child: const Text('show dialog'),

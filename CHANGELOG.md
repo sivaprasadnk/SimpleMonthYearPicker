@@ -1,3 +1,9 @@
+## 1.0.2
+* updating example in readme
+
+## 1.0.1
+* updating arguments
+
 ## 0.0.2
 *Updating Default arguments
 
