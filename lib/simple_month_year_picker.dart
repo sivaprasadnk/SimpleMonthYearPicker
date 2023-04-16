@@ -51,6 +51,7 @@ class SimpleMonthYearPicker {
     Color? backgroundColor,
     Color? selectionColor,
     bool? barrierDismissible,
+    bool? disableFuture,
   }) async {
     final ThemeData theme = Theme.of(context);
     var primaryColor = selectionColor ?? theme.primaryColor;
@@ -235,9 +236,15 @@ class SimpleMonthYearPicker {
                         ),
                         IconButton(
                           onPressed: () {
-                            setState(() {
-                              selectedYear = selectedYear + 1;
-                            });
+                            // DOC: Give user option to disable future years.
+                            if (disableFuture == true &&
+                                selectedYear == DateTime.now().year) {
+                              null;
+                            } else {
+                              setState(() {
+                                selectedYear = selectedYear + 1;
+                              });
+                            }
                           },
                           icon: Icon(
                             Icons.arrow_forward_ios,

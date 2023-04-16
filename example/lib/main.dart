@@ -36,13 +36,20 @@ class MyHomePage extends StatelessWidget {
           Center(
             child: ElevatedButton(
               onPressed: () async {
-                var selectedDate =
+                // This is in order to get the selected date.
+                final selectedDate =
                     await SimpleMonthYearPicker.showMonthYearPickerDialog(
-                  context: context,
-                  barrierDismissible: true,
-                );
+                        context: context,
+                        titleTextStyle: TextStyle(),
+                        monthTextStyle: TextStyle(),
+                        yearTextStyle: TextStyle(),
+                        disableFuture:
+                            true // This will disable future years. It is false by default.
+                        );
+                // Use the selected date as needed.
                 debugPrint("month :" + selectedDate.month.toString());
                 debugPrint("year :" + selectedDate.year.toString());
+                debugPrint('Selected date: $selectedDate');
               },
               child: const Text('show dialog'),
             ),
