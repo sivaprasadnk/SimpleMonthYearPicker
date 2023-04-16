@@ -10,7 +10,7 @@ Add this to your package's `pubspec.yaml` file
 
 ```yaml
 dependencies:
-  simple_month_year_picker: ^1.0.4
+  simple_month_year_picker: ^1.0.5
 ```
 
 ## Usage

@@ -234,6 +234,8 @@ class SimpleMonthYearPicker {
                                 fontWeight: FontWeight.bold,
                               ),
                         ),
+                        if (!(disableFuture == true &&
+                            selectedYear == DateTime.now().year))
                         IconButton(
                           onPressed: () {
                             // DOC: Give user option to disable future years.
@@ -251,7 +253,11 @@ class SimpleMonthYearPicker {
                             size: 10,
                             color: primaryColor,
                           ),
-                        ),
+                          )
+                        else
+                          SizedBox(
+                            width: 50,
+                          ),
                       ],
                     ),
                   ),

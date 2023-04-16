@@ -1,3 +1,6 @@
+## 1.0.5
+* Disable future-years feature added
+
 ## 1.0.4
 * Readme example correction
 
