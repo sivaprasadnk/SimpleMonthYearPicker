@@ -1,3 +1,6 @@
+## 1.0.6
+* Adding height and width parameters
+
 ## 1.0.5
 * Disable future-years feature added
 

@@ -42,6 +42,12 @@ class SimpleMonthYearPicker {
   /// The [barrierDismissible] argument is optional and is used to indicate whether tapping on the barrier will dismiss the dialog.
   ///  Defaults to true.
   ///
+  /// The [height] argument is optional. Defaults to 210.
+  /// It sets the height of the dialog box.
+  ///
+  /// The [width] argument is optional. Defaults to 370.
+  /// It sets the width of the dialog box.
+
 
   static Future<DateTime> showMonthYearPickerDialog({
     required BuildContext context,
