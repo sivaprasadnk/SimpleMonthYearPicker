@@ -1,3 +1,6 @@
+## 1.1.0
+* Improving documentation and updating screenshot
+
 ## 1.0.6
 * Adding height and width parameters
 

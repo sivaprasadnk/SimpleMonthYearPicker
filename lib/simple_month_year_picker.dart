@@ -48,7 +48,6 @@ class SimpleMonthYearPicker {
   /// The [width] argument is optional. Defaults to 370.
   /// It sets the width of the dialog box.
 
-
   static Future<DateTime> showMonthYearPickerDialog({
     required BuildContext context,
     TextStyle? titleTextStyle,
@@ -244,23 +243,23 @@ class SimpleMonthYearPicker {
                         ),
                         if (!(disableFuture == true &&
                             selectedYear == DateTime.now().year))
-                        IconButton(
-                          onPressed: () {
-                            // DOC: Give user option to disable future years.
-                            if (disableFuture == true &&
-                                selectedYear == DateTime.now().year) {
-                              null;
-                            } else {
-                              setState(() {
-                                selectedYear = selectedYear + 1;
-                              });
-                            }
-                          },
-                          icon: Icon(
-                            Icons.arrow_forward_ios,
-                            size: 10,
-                            color: primaryColor,
-                          ),
+                          IconButton(
+                            onPressed: () {
+                              // DOC: Give user option to disable future years.
+                              if (disableFuture == true &&
+                                  selectedYear == DateTime.now().year) {
+                                null;
+                              } else {
+                                setState(() {
+                                  selectedYear = selectedYear + 1;
+                                });
+                              }
+                            },
+                            icon: Icon(
+                              Icons.arrow_forward_ios,
+                              size: 10,
+                              color: primaryColor,
+                            ),
                           )
                         else
                           SizedBox(
