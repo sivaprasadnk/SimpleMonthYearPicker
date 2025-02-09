@@ -2,7 +2,8 @@
 
 Simple to use month/year picker for your apps with highly customisable options.
 
-![Image](https://github.com/sivaprasadnk/SimpleMonthYearPicker/blob/main/screenshots/screenshot1.png)
+![screenshot1](https://github.com/user-attachments/assets/e8434e5c-5c74-4ff4-abf5-425122c92033)
+
 
 ## Getting started
 
