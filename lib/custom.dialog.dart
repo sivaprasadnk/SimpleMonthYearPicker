@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 class CustomDialog extends StatelessWidget {
-  const CustomDialog({Key? key, required this.child}) : super(key: key);
+  const CustomDialog({Key? key, required this.child, this.height, this.width}) : super(key: key);
 
   final Widget child;
+  final double? height;
+  final double? width;
 
   @override
   Widget build(BuildContext context) {
