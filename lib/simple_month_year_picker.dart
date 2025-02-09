@@ -52,6 +52,8 @@ class SimpleMonthYearPicker {
     Color? selectionColor,
     bool? barrierDismissible,
     bool? disableFuture,
+    double? height,
+    double? width,
   }) async {
     final ThemeData theme = Theme.of(context);
     var primaryColor = selectionColor ?? theme.primaryColor;
@@ -73,8 +75,8 @@ class SimpleMonthYearPicker {
             child: Stack(
               children: [
                 Container(
-                  height: 210,
-                  width: 370,
+                  height: height ?? 210,
+                  width: width ?? 370,
                   decoration: BoxDecoration(
                     color: bgColor,
                     border: Border.all(
